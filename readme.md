@@ -6,4 +6,4 @@ Para la entrega de la semana 3 cada estudiante modifica este archivo y pone su n
 
 * Camila Alexandra Arias Ruiz
 * Maikol Ferney Angulo Beltran
-
+* Maicol Rodriguez Lopez
