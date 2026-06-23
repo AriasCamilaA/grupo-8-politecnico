@@ -2,6 +2,14 @@
 
 Aplicación web para gestionar tareas.
 
+# Integrantes
+
+* Camila Alexandra Arias Ruiz
+* Maikol Ferney Angulo Beltran
+* Jorge Esteban Gutierrez Buelvas
+* Maicol Rodriguez Lopez
+* Carolina atehortua Muñoz 
+
 ## Tecnologías
 
 - HTML
