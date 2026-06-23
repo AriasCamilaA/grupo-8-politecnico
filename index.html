@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Tareas</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-gray-100 font-sans flex h-screen">
 
     <div class="w-64 bg-white border-r border-gray-200 flex flex-col justify-between p-4">
@@ -14,9 +16,11 @@
                 <span>✓</span> Lista de Tareas Poli
             </div>
             <nav class="space-y-2">
-                <a href="#" class="flex justify-between items-center bg-emerald-50 text-emerald-700 p-2 rounded-lg font-medium">
+                <a href="#"
+                    class="flex justify-between items-center bg-emerald-50 text-emerald-700 p-2 rounded-lg font-medium">
                     <span>🗒️ Tareas Pendientes</span>
-                    <span id="sidebar-count" class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded-full">0</span>
+                    <span id="sidebar-count"
+                        class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded-full">0</span>
                 </a>
             </nav>
         </div>
@@ -35,7 +39,8 @@
                 <form id="task-form" class="flex gap-2 mb-6">
                     <input type="text" id="task-input" placeholder="+ Agregar una tarea..." required
                         class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-emerald-500 text-gray-700">
-                    <button type="submit" class="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition">
+                    <button type="submit"
+                        class="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition">
                         Añadir
                     </button>
                 </form>
@@ -66,6 +71,8 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/tasks.js"></script>
+    <script src="js/ui.js"></script>
 </body>
+
 </html>

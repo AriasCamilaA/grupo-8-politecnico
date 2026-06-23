@@ -1,11 +1,40 @@
-# Grupo 8 - Integración Continua
+# Lista de Tareas Poli
 
-Para la entrega de la semana 3 cada estudiante modifica este archivo y pone su nombre. Luego hace un commit con el cambio.
+Aplicación web para gestionar tareas.
 
-## Integrantes
+## Tecnologías
 
-* Camila Alexandra Arias Ruiz
-* Maikol Ferney Angulo Beltran
-* Jorge Esteban Gutierrez Buelvas
-* Maicol Rodriguez Lopez
-* Carolina atehortua Muñoz
+- HTML
+- JavaScript
+- Tailwind CSS
+- Jest
+- GitHub Actions
+- Docker
+
+## Ejecutar localmente
+
+Abrir:
+
+index.html
+
+## Ejecutar pruebas
+
+npm install
+npm test
+
+## Docker
+
+docker build -t lista-tareas .
+
+docker run -p 8080:80 lista-tareas
+
+## Integración Continua
+
+GitHub Actions ejecuta:
+
+- Validación JavaScript
+- Pruebas unitarias
+
+## Despliegue
+
+GitHub Pages

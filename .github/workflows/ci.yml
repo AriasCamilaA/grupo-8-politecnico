@@ -4,35 +4,28 @@ on:
   push:
     branches:
       - main
-      - develop
 
   pull_request:
     branches:
       - main
 
 jobs:
-  validate:
+  test:
 
     runs-on: ubuntu-latest
 
     steps:
 
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Verificar archivos
-        run: |
-          test -f index.html
-          test -f script.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-      - name: Validar HTML básico
-        run: |
-          grep "<html" index.html
-          grep "</html>" index.html
+      - run: npm install
 
-      - name: Validar JS
-        run: |
-          node --check script.js
+      - run: npm test
 
-      - name: CI Exitosa
-        run: echo "Todo OK"
+      - run: node --check js/ui.js
+
+      - run: node --check js/tasks.js
